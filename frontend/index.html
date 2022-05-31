@@ -11,6 +11,7 @@
   <body>
     <!-- <div id="root"></div> -->
     <form
+      class="hidden"
       id="form-googleSearch"
       action="https://www.google.com/search"
       method="get"
@@ -18,12 +19,20 @@
       <input type="text" name="q" id="" />
       <button id="btn-google-search">Send</button>
     </form>
-    <a href="https://www.google.com/search?q=javascript">Search for js</a>
+    <a class="hidden" href="https://www.google.com/search?q=javascript">
+      Search for js
+    </a>
 
-    <form action="" method="post">
+    <form action="" method="post" class="hidden">
       <input type="text" name="name" id="" />
       <input type="password" name="password" />
       <button>Login</button>
     </form>
+
+    <div class="docs">
+      <label for="doc-text">A doksi szövege</label>
+      <textarea name="doc-text" id="doc-text" rows="10" cols="30"></textarea>
+      <p id="save-in-progress-text" class="hidden">Mentés...</p>
+    </div>
   </body>
 </html>

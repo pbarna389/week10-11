@@ -1,8 +1,12 @@
-#form-googleSearch {
-  display: inline;
+.hidden {
+  display: none;
 }
 
 a {
   display: block;
+}
+
+textarea {
+  resize: none;
 }
 /*# sourceMappingURL=style.css.map */
