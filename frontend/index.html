@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is FRONTEND</title>
-    <script src="script.js"></script>
+
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- <div id="root"></div> -->
-    <form action="https://www.google.com/search" method="get">
+    <form
+      id="form-googleSearch"
+      action="https://www.google.com/search"
+      method="get"
+    >
       <input type="text" name="q" id="" />
-      <button>Send</button>
+      <button id="btn-google-search">Send</button>
     </form>
     <a href="https://www.google.com/search?q=javascript">Search for js</a>
 
     <form action="" method="post">
       <input type="text" name="name" id="" />
       <input type="password" name="password" />
-      <button>Send</button>
+      <button>Login</button>
     </form>
   </body>
 </html>
