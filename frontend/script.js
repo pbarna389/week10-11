@@ -18,12 +18,11 @@ function save() {
 
     saveText.classList.remove('hidden');
 
-    fetch('http://127.0.0.1:9000', {
+    await fetch('http://127.0.0.1:9000', {
         method: 'POST',
         body: docText
-    }).then(function () {
-        saveText.classList.add('hidden')
     });
+    saveText.classList.add('hidden')
 
 };
 
