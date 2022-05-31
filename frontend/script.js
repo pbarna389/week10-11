@@ -4,16 +4,14 @@ console.log(googleSearchButton);
 
 const errorMessage = () => {
     return `
-    <div class="error">
-        <p>Type in something please!</p>
-    </div>
+        <span class="error">Type in something please!</span>
     `
 };
 
 const deleteMessage = () => {
     const error = document.querySelector('.error');
     error.parentNode.removeChild(error);
-}
+};
 
 googleSearchButton.addEventListener('click', function (event) {
     event.preventDefault();
