@@ -10,7 +10,7 @@ const errorMessage = () => {
 
 setInterval(save, 3000);
 
-function save() {
+async function save() {
     const textarea = document.querySelector('#doc-text');
     const docText = textarea.value;
 
