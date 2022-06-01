@@ -18,14 +18,14 @@ async function save() {
 
     saveText.classList.remove('hidden');
 
-    await fetch('http://127.0.0.1:9000', {
+    await fetch('http://127.0.0.1:5500', {
         method: 'POST',
         body: docText
     });
+
     saveText.classList.add('hidden')
 
 };
-
 
 const deleteMessage = () => {
     const error = document.querySelector('.error');
